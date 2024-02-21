@@ -117,7 +117,7 @@ class Graph:
         return dist, dist[end]
 
 
-git
+
 class Matrix(Graph):
     """Класс Matrix наследуется от класса Graph, представляет собой абстракцию неориентированного графа, состоящего из вершина и ребер
 

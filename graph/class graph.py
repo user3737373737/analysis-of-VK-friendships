@@ -14,7 +14,7 @@ class Graph:
         """Конструктор класса Graph хранит количество вершин, количество ребер, список смежности графа"""
 
         self.vertex = vertex
-        self.edge = edgeч
+        self.edge = edge
         self.graph = [[] for _ in range(vertex)]
 
     def add_edge(self, u, v):

@@ -139,7 +139,6 @@ class Matrix(Graph):
             for y in range(self.edge):
                 if lst[x][y] == 1:
                     self.graph[x].append(y)
-                    print("hihgi")
         return self.graph
 
     def dfs(self, start, clr):

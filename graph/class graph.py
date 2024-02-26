@@ -128,7 +128,7 @@ class Matrix(Graph):
     Класс Matrix принимает граф в виде матрицы смежности и хранит в виде списка ребер"""
 
     def __init__(self, vertex, edge):
-        """Конструктор класса Matrix наследуется от конструктора класса Graph"""
+        """Конструктор класса Matrix наследуется от конструктора Graph"""
 
         super().__init__(vertex, edge)
 
@@ -139,6 +139,7 @@ class Matrix(Graph):
             for y in range(self.edge):
                 if lst[x][y] == 1:
                     self.graph[x].append(y)
+                    print("hi")
         return self.graph
 
     def dfs(self, start, clr):

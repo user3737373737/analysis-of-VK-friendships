@@ -1,6 +1,7 @@
 n, m = map(int, input().split())
 graph = [[] for i in range(n)]
 color = [0] * n
+fl = True
 for i in range(m):
     u, v = map(int, input().split())
     u -= 1
@@ -10,11 +11,13 @@ for i in range(m):
 
 
 def dfs(v, graph, color, cur_color):
+    global fl
     color[v] = cur_color
     for u in graph[v]:
         if color[u] == 0:
             dfs(u, graph, color, 3 - cur_color)
         elif color[u] == color[v]:
+            fl = True
             print(0)
             exit(0)
 
@@ -23,6 +26,10 @@ for v in range(n):
     if color[v] == 0:
         dfs(v, graph, color, 1)
 
+if fl:
+    print('Yes')
+else:
+    print('no')
 for i in range(len(color)):
     if color[i] == 1:
         print(i + 1, end=' ')

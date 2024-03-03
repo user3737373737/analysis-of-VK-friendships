@@ -1,7 +1,7 @@
 import vk_api
 
 
-token = 'vk1.a.mEMdYdt4WnIoCkdIo-spABdjJzAWZ7lBMBwNmkwbWpu0ZoOCEVLznRReqImaqr0VI0wvTVyF_K0h5sE_WjITwW1pH8J--mZdF0iOoNGbwE-R5fbqCcZI1_3h_VL_TvDUIMk26cKbmYh4wDq3LN2FOZ7DdamdSlq-mxmzK2vg3GV2GihsAqIhgLAwcoOKWp2h'
+token = ''
 
 session = vk_api.VkApi(token=token)
 vk = session.get_api()
@@ -24,4 +24,4 @@ def get_friends(user_id):
         print(name, surname, sex)
 
 
-get_friends(633714088)
+get_friends("feliksowna")

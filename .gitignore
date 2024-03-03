@@ -18,13 +18,13 @@ te?t.txt
 # игнорировать только файл main.py находящийся в корневом каталоге
 # не относится к файлам вида <папка>/main.py
 
-/main.py
+/analysis-of-VK-friendships/main.py
 
 # игнорировать все файлы в каталоге .idea/
 
 .idea/
 
-/vk.py
+/analysis-of-VK-friendships/vk.py
 
 .venv/
 

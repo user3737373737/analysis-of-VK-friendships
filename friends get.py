@@ -24,4 +24,4 @@ def get_friends(user_id):
         print(name, surname, sex)
 
 
-get_friends("feliksowna")
+get_friends(1)

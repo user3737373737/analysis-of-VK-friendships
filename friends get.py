@@ -9,7 +9,6 @@ vk = session.get_api()
 
 def get_friends(user_id):
     friends = session.method("friends.get", {"user_id": user_id})
-    print(friends)
     for friend in friends["items"]:
         user = session.method("users.get", {"user_ids": friend,
                                             "fields": "city, sex"})

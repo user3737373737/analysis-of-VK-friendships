@@ -1,9 +1,9 @@
 import vk_api
 
 
-token = 'vk1.a.mEMdYdt4WnIoCkdIo-spABdjJzAWZ7lBMBwNmkwbWpu0ZoOCEVLznRReqImaqr0VI0wvTVyF_K0h5sE_WjITwW1pH8J--mZdF0iOoNGbwE-R5fbqCcZI1_3h_VL_TvDUIMk26cKbmYh4wDq3LN2FOZ7DdamdSlq-mxmzK2vg3GV2GihsAqIhgLAwcoOKWp2h'
+access_token = 'vk1.a.mEMdYdt4WnIoCkdIo-spABdjJzAWZ7lBMBwNmkwbWpu0ZoOCEVLznRReqImaqr0VI0wvTVyF_K0h5sE_WjITwW1pH8J--mZdF0iOoNGbwE-R5fbqCcZI1_3h_VL_TvDUIMk26cKbmYh4wDq3LN2FOZ7DdamdSlq-mxmzK2vg3GV2GihsAqIhgLAwcoOKWp2h'
 
-session = vk_api.VkApi(token=token)
+session = vk_api.VkApi(token=access_token)
 vk = session.get_api()
 
 

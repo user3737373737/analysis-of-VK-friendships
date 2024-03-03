@@ -23,9 +23,12 @@ te?t.txt
 # игнорировать все файлы в каталоге .idea/
 
 .idea/
+
 /vk.py
+
 .venv/
 
+.analysis-of-VK-friendships/
 # игнорировать файлы с расширением .txt, только в папке doc, но не в подпапках папки doc
 
 doc/*.txt

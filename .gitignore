@@ -25,9 +25,9 @@ te?t.txt
 .idea/
 
 /analysis-of-VK-friendships/vk.py
-/uhfa.py
-/graph with pyvis.py
-/graph_of_friends.html
+/analysis-of-VK-friendships/uhfa.py
+/analysis-of-VK-friendships/graph with pyvis.py
+/analysis-of-VK-friendships/graph_of_friends.html
 .venv/
 
 .analysis-of-VK-friendships/

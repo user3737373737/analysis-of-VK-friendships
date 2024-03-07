@@ -25,6 +25,7 @@ def get_friends(user_id, d):
         else:
             d[i["id"]] = session.method("friends.get", {"user_id": i["id"],
                                                         "fields": "bdate, city, sex"})
+    print(d.keys())
     return d
 
 
@@ -34,17 +35,21 @@ def draw_friends(user_id, dict):
         g.add_edge(user_id, i)
 
 
-def draw(d):
+def draw(user_id, d):
     for t in d:
         if d[t] != 'private account' and d[t] != 'banned account':
             for q in d[t]["items"]:
-                g.add_node(q["id"], label=q["first_name"], color='yellow')
+                g.add_node(q["id"], label=q["first_name"], color='gray')
                 g.add_edge(t, q["id"])
+                friends2 = q["id"].count()
+                # m = session.method("friends.getMutual", {"target_uid": user_id,
+                #                                          "target_uids": q["id"]})
+                # g.add_nodes_from(m, label='com_fri', color='green')
 
 
-get_friends(218756086, d)
-draw_friends(218756086, d)
-draw(d)
+get_friends(633714088, d)
+draw_friends(633714088, d)
+draw(633714088, d)
 nt = Network(notebook=True, cdn_resources='remote')
 nt.from_nx(g)
-nt.show('graph.html')
+nt.show('graph of friends.html')
